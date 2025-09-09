@@ -37,7 +37,7 @@ export function initEquityLensWidget(options: WidgetOptions) {
   const width = options.width || '100%';
   const height = options.height || '600px';
 
-  iframe.src = `https://widget.equitylens.com/chart?apiKey=${options.apiKey}&symbol=${symbol}`;
+  iframe.src = `https://widget.equitylens.com.ar/chart?apiKey=${options.apiKey}&symbol=${symbol}`;
   iframe.style.width = width;
   iframe.style.height = height;
   iframe.style.border = 'none';
