@@ -1,0 +1,33 @@
+{
+  "name": "equitylens-widget",
+  "version": "1.0.1",
+  "main": "index.js",
+    "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+      ,"build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeaBassLab/equitylens-widget.git"
+  },
+  "keywords": [
+    "widget",
+    "finanzas",
+    "equitylens",
+    "gráficos",
+    "bolsa",
+    "typescript",
+    "javascript",
+    "inversión",
+    "mercados",
+    "visualización"
+  ],
+    "author": "Sebastian Pulido",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/SeaBassLab/equitylens-widget/issues"
+    },
+    "homepage": "https://github.com/SeaBassLab/equitylens-widget#readme",
+    "description": "Widget instalable para integrar gráficos financieros de EquityLens en cualquier web o aplicación. Incluye validación segura de dominio, manejo de errores y métodos para interactuar con el widget."
+}
