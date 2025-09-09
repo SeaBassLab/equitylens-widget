@@ -1,9 +1,9 @@
 export interface WidgetOptions {
   apiKey: string;
-  containerId?: string; // id del div donde se renderiza el widget
+  containerId?: string;
   symbol?: string;
-  width?: string; // Ej: '100%', '800px'
-  height?: string; // Ej: '600px', '100%'
+  width?: string;
+  height?: string;
   onError?: (error: string) => void;
   onEvent?: (event: any) => void;
 }
@@ -37,7 +37,7 @@ export function initEquityLensWidget(options: WidgetOptions) {
   const width = options.width || '100%';
   const height = options.height || '600px';
 
-  iframe.src = `https://widget.equitylens.com.ar/chart?apiKey=${options.apiKey}&symbol=${symbol}`;
+  iframe.src = `https://widget.equitylens.com.ar/chart`;
   iframe.style.width = width;
   iframe.style.height = height;
   iframe.style.border = 'none';
@@ -47,7 +47,7 @@ export function initEquityLensWidget(options: WidgetOptions) {
   // 5. Enviar el parentDomain por postMessage
   iframe.onload = () => {
     iframe.contentWindow?.postMessage(
-      { parentDomain: window.location.hostname, apiKey: options.apiKey },
+      { parentDomain: window.location.hostname, apiKey: options.apiKey, symbol: symbol },
       '*'
     );
   };

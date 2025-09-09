@@ -33,9 +33,7 @@ initEquityLensWidget({
 |---------------|---------------------|-----------------------------------------------------------------------------|
 | apiKey        | string (requerido)  | Tu API Key de EquityLens.                                                   |
 | containerId   | string (opcional)   | ID del div donde se renderiza el widget. Si no existe, se crea automáticamente. |
-| theme         | 'light' \| 'dark'   | Tema visual del widget.                                                     |
 | symbol        | string (opcional)   | Símbolo financiero inicial (ej: 'AAPL').                                   |
-| timeframe     | string (opcional)   | Timeframe inicial (ej: '1D', '1W', '1mo').                                 |
 | width         | string (opcional)   | Ancho del iframe (ej: '100%', '800px').                                    |
 | height        | string (opcional)   | Alto del iframe (ej: '600px', '100%').                                     |
 | onError       | function (opcional) | Callback para manejar errores del widget.                                   |
@@ -94,7 +92,7 @@ export default function MiComponente() {
 
 ## Seguridad y validación
 
-- El widget valida el dominio padre vía postMessage y la API Key contra los dominios permitidos en tu cuenta EquityLens.
+- El widget valida el dominio padre vía postMessage y la API Key contra los dominios permitidos en tu cuenta [EquityLens](https://equitylens.com.ar).
 - Solo puede usarse en el navegador (no SSR).  
 - Si usas Next.js, llama a la función dentro de un `useEffect`.
 
@@ -115,6 +113,6 @@ Usa la opción `onError` para recibir mensajes de error y mostrarlos como prefie
 
 ## Soporte
 
-Para soporte técnico, contacta a soporte@equitylens.com o abre un issue en el repositorio.
+Para soporte técnico, dirigite a [nuestro sitio](https://equitylens.com.ar) y abre un tiket en soporte. o abre un issue en el repositorio.
 
 ---
