@@ -54,9 +54,22 @@ const widget = initEquityLensWidget({
 // Recargar el widget
 widget.reload();
 
+// Cambiar el ancho dinámicamente
+widget.setWidth('80vw');
+
+// Cambiar el alto dinámicamente
+widget.setHeight('500px');
+
 // Destruir el widget y limpiar listeners
 widget.destroy();
 ```
+
+**Métodos disponibles:**
+
+- `reload()`: Recarga el contenido del widget.
+- `setWidth(newWidth: string)`: Cambia el ancho del iframe dinámicamente.
+- `setHeight(newHeight: string)`: Cambia el alto del iframe dinámicamente.
+- `destroy()`: Elimina el widget y limpia los listeners.
 
 ---
 

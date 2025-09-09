@@ -73,6 +73,12 @@ export function initEquityLensWidget(options: WidgetOptions) {
   // 7. Retornar métodos para controlar el widget
   return {
     reload: () => iframe.contentWindow?.location.reload(),
+    setWidth: (newWidth: string) => {
+      iframe.style.width = newWidth;
+    },
+    setHeight: (newHeight: string) => {
+      iframe.style.height = newHeight;
+    },
     destroy: () => {
       window.removeEventListener('message', messageHandler);
       if (container) {
